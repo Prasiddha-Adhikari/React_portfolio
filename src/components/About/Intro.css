@@ -1,0 +1,88 @@
+.about-intro {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.about-intro__container {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about-intro__header {
+    font-family: "RedWingBold";
+}
+.about-intro__header h2 {
+    margin-left: 5%;
+    letter-spacing: 0.1em;
+    font-size: 12vw;
+    font-weight: 900;
+    z-index: 1;
+    color: #212020;
+}
+.about-intro__header h2 span {
+    -webkit-text-stroke: 1px #212020;
+    color: #000;
+}
+.about-intro__header h1 {
+    font-size: 15vw;
+    color: #fff e8;
+    margin-left: 15%;
+    margin-top: -0.5em;
+    letter-spacing: 0.05em;
+}
+.about-intro__description {
+    position: relative;
+    padding-top: 3%;
+    margin-left: 15%;
+    color: #fff;
+    font-weight: lighter;
+    max-width: 50vw;
+    padding-right: 8%;
+    line-height: 1.5;
+}
+.about-intro__description p {
+    margin-bottom: 1em;
+}
+.about-intro__emoji {
+    display: inline-block;
+    position: absolute;
+    bottom: -1.2em;
+    right: 1em;
+    font-size: 13em;
+    transform: rotate(42deg);
+    color: #585656 38;
+}
+@media screen and (max-width: 998px) {
+    .about-intro__container {
+        flex-direction: column;
+        justify-content: flex-start;
+   }
+    .about-intro__header {
+        text-align: left;
+        width: 100%;
+   }
+    .about-intro__header h2 {
+        margin-left: 0;
+        font-size: 7em;
+   }
+    .about-intro__header h1 {
+        margin-left: 5%;
+        font-size: 8em;
+   }
+    .about-intro__description {
+        margin-top: 2em;
+        margin-left: 0;
+        padding-right: 0;
+        max-width: 100%;
+   }
+    .about-intro__emoji {
+        margin-top: 0.5em;
+   }
+}

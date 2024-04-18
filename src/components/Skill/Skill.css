@@ -1,0 +1,157 @@
+.skill {
+    position: relative;
+    top: 0;
+}
+.skill__main-container {
+    position: relative;
+    top: 0;
+    padding: 2% 5%;
+    color: #fff;
+    margin-top: 2em;
+}
+.skill__inner-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.skill__header {
+    position: relative;
+    top: 0;
+    text-align: left;
+    font-family: 'RedWingBold';
+    font-weight: bolder;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-size: 2em;
+    color: #fff;
+}
+.skill__header::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+    width: 10%;
+    height: 0.05em;
+    background-color: #0ff;
+}
+.skill__header h1 span {
+    position: relative;
+}
+.skill__heading h1 {
+    position: relative;
+    display: inline-block;
+}
+@keyframes headingAnimation {
+    0% {
+        left: 0;
+        font-size: 2em;
+   }
+    100% {
+        left: -43%;
+        font-size: 0.7em;
+        letter-spacing: 0.05em;
+        color: #fff;
+   }
+}
+.skill__info {
+    height: 100%;
+}
+.skill__skill-tags {
+    letter-spacing: 0.05em;
+}
+.skill__skill-tags span {
+    font-family: 'RedWingLight';
+    display: inline-block;
+    padding: 0.2em 1em;
+    border-radius: 0.25em;
+    background-color: #1c1e1e;
+    color: #0ff;
+}
+.skill__details {
+    margin-top: 1.5em;
+}
+.skill__details h4 {
+    font-family: 'RedWingLight';
+    letter-spacing: 0.1em;
+    font-size: 1em;
+    color: #0ff;
+}
+.skill__details ul {
+    list-style-position: inside;
+    margin-top: 0.2em;
+    margin-left: 1.5em;
+}
+.skill__details ul li {
+    letter-spacing: 0.05em;
+    color: #0ff;
+    list-style-position: outside;
+}
+.skill__details ul li span {
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+.skill__details ul li span b {
+    font-weight: 400;
+}
+.skill__cloud {
+    position: relative;
+    left: -2%;
+   /* Change color of each text in sphere on hover */
+}
+.skill__cloud .tagcloud {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    font-weight: 300;
+    letter-spacing: 0.0625em;
+    font-family: 'RedWingLight';
+    font-size: 1em;
+}
+.skill__cloud .tagcloud--item {
+    color: #0ff ff;
+    text-transform: uppercase;
+}
+.skill__cloud .tagcloud--item:hover {
+    color: #ff6347;
+}
+@media screen and (max-width: 1024px) {
+    .skill .tagcloud {
+        font-size: 1em;
+   }
+}
+@media screen and (max-width: 893px) {
+    .skill__inner-container {
+        flex-direction: column;
+        align-items: flex-start;
+   }
+    .skill__info {
+        order: 2;
+   }
+    .skill__cloud {
+        align-self: center;
+   }
+    .skill__details-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+   }
+    .skill__details {
+        width: 50%;
+   }
+}
+@media screen and (max-width: 768px) {
+    .skill__header {
+        font-size: 1.33em;
+   }
+}
+@media screen and (max-width: 538px) {
+    .skill__details-container {
+        flex-direction: column;
+   }
+    .skill__details {
+        width: 100%;
+   }
+}

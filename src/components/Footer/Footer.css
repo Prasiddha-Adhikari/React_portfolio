@@ -1,0 +1,35 @@
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background: #0e0e0e;
+    color: #fff;
+    font-family: 'Sacramento', cursive;
+    font-weight: 300;
+    padding: 1em 0;
+    text-align: center;
+    margin-top: 3em;
+}
+
+.footer p {
+    word-spacing: 0.2em;
+}
+
+.footer p svg {
+    animation: animateheart 5s linear infinite;
+}
+
+@keyframes animateheart {
+    0% {
+        color: red;
+   }
+    50% {
+        color: yellow;
+   }
+    75% {
+        color: cyan;
+   }
+    100% {
+        color: red;
+   }
+}

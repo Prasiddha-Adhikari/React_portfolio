@@ -1,0 +1,82 @@
+.works {
+    position: relative;
+    top: 0;
+    background: #000;
+}
+.works__container {
+    position: relative;
+    top: 0;
+    padding: 2% 5%;
+    color: aliceblue;
+}
+.works__header {
+    position: relative;
+    top: 0;
+    text-align: left;
+    font-family: "RedWingBold";
+    font-weight: 700;
+    color: #212020;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-size: 2em;
+}
+.works__header::after {
+    position: absolute;
+    bottom: 0;
+    left: 0.1em;
+    content: "";
+    width: 10%;
+    height: 0.05em;
+    background-color: #0ff;
+}
+.works__header h1 {
+    position: relative;
+    color: #fff;
+}
+.works__header h1 span {
+    position: relative;
+}
+.works__heading {
+    color: #fff;
+}
+.works__heading h1 {
+    position: relative;
+    display: inline-block;
+}
+.works__grid {
+    position: relative;
+    top: 0;
+    width: 100%;
+    padding-top: 2em;
+}
+.works__grid-container {
+    position: relative;
+    top: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+}
+@media screen and (max-width: 1040px) {
+    .works__grid-container {
+        grid-template-columns: 1fr 1fr;
+   }
+}
+@media screen and (max-width: 768px) {
+    .works__grid-container {
+        grid-template-columns: 1fr;
+   }
+    .works__header {
+        font-size: 1.33em;
+   }
+}
+@keyframes headingAnimation {
+    0% {
+        left: 0;
+        font-size: 2em;
+   }
+    100% {
+        left: -43%;
+        font-size: 0.7em;
+        letter-spacing: 0.05em;
+   }
+}

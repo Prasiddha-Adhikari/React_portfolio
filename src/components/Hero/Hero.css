@@ -1,0 +1,291 @@
+.hero {
+    position: relative;
+    top: 0;
+    background-color: #000;
+}
+.hero::before, .hero::after {
+    position: absolute;
+    content: '';
+    z-index: 1;
+    opacity: 0.1;
+    width: 2em;
+    height: 2em;
+}
+.hero::before {
+    top: 80%;
+    left: -1%;
+    content: '';
+    border: 0.2em solid #0ff;
+    transform: rotate(79deg);
+}
+.hero::after {
+    top: 80%;
+    left: 50%;
+    content: '';
+    background: url('../../assets/images/icons/triangle.svg') no-repeat;
+    background-size: 100% 100%;
+    transform: rotate(79deg);
+}
+.hero__container {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    display: flex;
+    padding-bottom: 2em;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+}
+.hero__container::before {
+    position: absolute;
+    top: 55%;
+    right: 10%;
+    content: '';
+    width: 2em;
+    height: 2em;
+    z-index: 1;
+    border: 0.2em solid #0ff;
+    opacity: 0.1;
+    transform: rotate(79deg);
+}
+.hero__container::after {
+    position: absolute;
+    top: 48%;
+    left: 36%;
+    content: '';
+    width: 2em;
+    height: 0.2em;
+    z-index: 1;
+    border: 0.2em solid #0ff;
+    opacity: 0.1;
+    transform: rotate(201deg);
+}
+.hero__alphabet {
+    display: inline-block;
+    color: #0ff;
+}
+.hero__animated-alphabet-box {
+    font-family: 'RedWingBold';
+    margin-left: 10%;
+    text-transform: uppercase;
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+.hero__animated-alphabet-box span:last-child {
+    color: #fff;
+    margin-right: 0.5em;
+}
+.hero__alphabet--last {
+    margin-right: 0.15em;
+}
+.hero__description {
+    margin-left: 10%;
+    font-weight: 300;
+    width: 60%;
+    line-height: 1.5;
+}
+.hero__description p {
+    min-width: 23em;
+}
+.hero__description p span {
+    margin-bottom: 0.5em;
+    border-bottom: 0.07em solid #0ff;
+    padding-bottom: 0.2em;
+}
+.hero__dev-text {
+    position: relative;
+    display: inline-block;
+    z-index: 2;
+}
+.hero__buttons {
+    position: relative;
+    margin-top: 3em;
+    margin-left: 10%;
+    z-index: 2;
+}
+.hero__buttons a {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 0.5em 1em;
+}
+.hero__know-btn {
+    color: #000;
+    margin-right: 1.5em;
+    background: #0ff;
+    border: 0.1em solid #0ff;
+}
+.hero__know-btn:hover {
+    background: transparent;
+    border: 0.1em solid #ff6347;
+    color: #fff;
+}
+.hero__contact-btn {
+    color: #fff;
+    border: 0.1em solid #0ff;
+}
+.hero__contact-btn:hover {
+    background: #ff6347;
+    border: 0.1em solid #ff6347;
+}
+.hero__image {
+    position: relative;
+    width: 50%;
+    z-index: 2;
+}
+.hero__image::after {
+    position: absolute;
+    content: '';
+    z-index: 1;
+    width: 2em;
+    height: 2em;
+    opacity: 0.15;
+    top: 10%;
+    right: 5%;
+    content: '';
+    background: url('../../assets/images/icons/triangle.svg') no-repeat;
+    background-size: 100% 100%;
+    transform: rotate(45deg);
+}
+.hero__image img {
+    position: relative;
+    z-index: 2;
+    width: 90%;
+    height: auto;
+    min-width: 21em;
+    margin-top: 10%;
+    margin-right: 10%;
+}
+.hero__intro-box {
+    position: relative;
+    color: #fff;
+    z-index: 2;
+}
+.hero__intro-line {
+    position: relative;
+    width: 9.2%;
+    height: 0.05em;
+    margin-right: 0.5em;
+    display: inline-block;
+    background: #0ff;
+}
+.hero__intro-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 300;
+}
+@media screen and (max-width: 778px) {
+    .hero__container {
+        height: 70vh;
+        padding-top: 10%;
+   }
+    .hero__image {
+        display: inline-block;
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+        overflow: hidden;
+   }
+    .hero__image img {
+        opacity: 0.3;
+        width: 100%;
+        left: 39%;
+        margin-right: 0;
+   }
+    .hero__description {
+        width: 80%;
+   }
+    .hero__description p {
+        min-width: 10em;
+   }
+}
+@keyframes socialAccounts {
+    0% {
+        width: 0.2em;
+   }
+    100% {
+        width: 3em;
+   }
+}
+@keyframes textColorAnimation {
+    0% {
+        background: linear-gradient(107deg, #f93 30%, #fff, #138808 75.71%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        -webkit-filter: hue-rotate(0deg);
+   }
+    100% {
+        background: linear-gradient(107deg, #f93 30%, #fff, #138808 75.71%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        -webkit-filter: hue-rotate(360deg);
+   }
+}
+@keyframes textZoomAnimation {
+    0% {
+        transform: scale(10, 5);
+   }
+    100% {
+        transform: scale(1, 1);
+   }
+}
+@keyframes textInOutAnimation {
+    0% {
+        transform: scale(1, 1);
+   }
+    50% {
+        transform: scale(10, 5);
+   }
+    100% {
+        transform: scale(1, 1);
+   }
+}
+.alphabet-animated {
+    color: #ff6347;
+    animation: alphabetAnimation 0.7s ease-in-out 1;
+}
+@keyframes alphabetAnimation {
+    0% {
+        transform: scale(1.2, 0.5);
+   }
+    16% {
+        transform: scale(1.2, 0.5);
+   }
+    25% {
+        transform: scale(1.2, 0.5);
+   }
+    32% {
+        transform: scale(0.8, 1.1);
+   }
+    48% {
+        transform: scale(0.95, 1);
+   }
+    64% {
+        transform: scale(0.8, 1.2);
+   }
+    80% {
+        transform: scale(1.15, 1);
+   }
+    87% {
+        transform: scale(1.15, 1);
+   }
+    90% {
+       /* This will add the shaking effect one time almost at the end */
+        transform: scale(0.8, 1);
+   }
+    95% {
+        transform: scale(1.05, 1);
+   }
+    100% {
+        transform: scale(1, 1);
+   }
+}

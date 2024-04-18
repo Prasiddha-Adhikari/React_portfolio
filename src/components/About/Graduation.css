@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+ .graduation {
+	 position: relative;
+	 top: 0;
+	 width: 100%;
+	 height: 100vh;
+	 overflow: hidden;
+	 font-family: 'Poppins', sans-serif;
+}
+ .graduation__container {
+	 position: relative;
+	 top: 0;
+	 width: 100%;
+	 height: 100%;
+	 padding: 2em;
+	 display: flex;
+	 justify-content: space-between;
+	 align-items: center;
+}
+ .graduation__header {
+	 font-family: 'RedWingBold';
+}
+ .graduation__header h2 {
+	 margin-left: 0.5em;
+	 letter-spacing: 0.1em;
+	 font-size: 8em;
+	 font-weight: 900;
+	 z-index: 1;
+	 color: #212020;
+}
+ .graduation__header h2 span {
+	 -webkit-text-stroke: 1px #212020;
+	 color: #000;
+}
+ .graduation__header h1 {
+	 font-size: 9vw;
+	 color: #fff e8;
+	 margin-left: 0.68em;
+	 margin-top: -0.58em;
+	 letter-spacing: 0.05em;
+}
+ .graduation__description {
+	 color: #fff;
+	 padding-right: 5%;
+	 padding-left: 5%;
+}
+ .graduation__description h1 {
+	 font-family: 'RedWingLight';
+	 font-weight: 400;
+	 margin-bottom: 0.1em;
+}
+ .graduation__description h2 {
+	 font-family: 'RedWingLight';
+	 margin-bottom: 0.1em;
+	 font-size: 1em;
+	 letter-spacing: 1px;
+}
+ .graduation__description p {
+	 margin-top: 2em;
+	 font-family: 'Poppins', sans-serif;
+	 font-weight: 200;
+}
+ @media screen and (max-width: 998px) {
+	 .graduation__container {
+		 flex-direction: column;
+		 justify-content: flex-start;
+		 align-items: flex-start;
+		 padding: 1em;
+	}
+	 .graduation__header {
+		 text-align: left;
+		 width: 100%;
+	}
+	 .graduation__header h2 {
+		 margin-left: 0;
+		 font-size: 5em;
+	}
+	 .graduation__header h1 {
+		 margin-left: 5%;
+		 font-size: 5em;
+	}
+	 .graduation__description {
+		 margin-top: 4em;
+		 margin-left: 0;
+		 padding-right: 2%;
+		 padding-left: 0;
+		 max-width: 100%;
+	}
+	 .graduation__description h1 {
+		 font-size: 1.33em;
+	}
+	 .graduation__description h2 {
+		 font-size: 1em;
+	}
+	 .graduation__description p {
+		 margin-top: 1em;
+	}
+	 .graduation__emoji {
+		 margin-top: 0.5em;
+	}
+}
+ @media screen and (max-width: 698px) {
+	 .graduation__header h1 {
+		 margin-top: -1em;
+		 font-size: 3.5em;
+	}
+}
+ 
